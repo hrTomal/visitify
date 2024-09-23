@@ -5,9 +5,10 @@ import { CustomerDashboardComponent } from './features/dashboard/customer-dashbo
 import { ServiceProviderDashboardComponent } from './features/dashboard/service-provider-dashboard/service-provider-dashboard.component';
 import { AuthComponent } from './features/auth/auth.component';
 import { RegisterComponent } from './features/register/register.component';
+import { LandingComponent } from './features/landing/landing/landing.component';
 
 export const routes: Routes = [
-    { path: '', component: CustomerLandingComponent },
+    { path: '', component: LandingComponent },
     { path: 'sp_landing', component: ServiceProviderLandingComponent },
     { path: 'cs_dashboard', component: CustomerDashboardComponent },
     { path: 'sp_dashboard', component: ServiceProviderDashboardComponent },

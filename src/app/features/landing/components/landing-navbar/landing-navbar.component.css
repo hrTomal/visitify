@@ -1,0 +1,42 @@
+/* Navbar */
+
+
+
+.navbar {
+    background: rgba(0, 0, 0, 0) !important; /* 50% transparency */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    padding-left: 5%;
+    padding-right: 5%;
+    backdrop-filter: blur(15px);
+}
+
+.navbar-brand .logo {
+    height: 50px; /* Adjust as necessary */
+    width: auto; /* Maintains aspect ratio */
+}
+
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+  
+.btn-outline-light:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-toggle::after {
+margin-left: 0.5rem;
+}
+
+.material-icons {
+font-size: 1.2rem; /* Adjust icon size */
+vertical-align: middle;
+}
+
+  
+.dropdown-toggle::after {
+    margin-left: 0.5rem;
+  }
