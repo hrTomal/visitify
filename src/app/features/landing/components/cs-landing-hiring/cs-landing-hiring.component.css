@@ -1,0 +1,11 @@
+
+
+
+.hiring-body-text{
+    color: var(--Shark-200, #D1D1D1);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}

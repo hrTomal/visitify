@@ -1,0 +1,13 @@
+.footer-container{
+    background: var(--Shark-950, #1F1F1F);
+}
+
+a {
+    text-decoration: none;
+  }
+
+.logo {
+    height: 100px; /* Adjust as necessary */
+    width: auto; /* Maintains aspect ratio */
+}
+
