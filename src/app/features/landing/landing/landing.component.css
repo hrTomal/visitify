@@ -1,8 +1,6 @@
-
-  /* .service-icon, .search-icon {
-    font-size: 48px;
-    color: #000;
-  } .*/
+.main-div{
+  background: var(--Shark-50, #F5F5F5);
+}
 card-icons{
   font-size: 100px;
 }

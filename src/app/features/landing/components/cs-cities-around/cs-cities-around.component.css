@@ -7,3 +7,23 @@
     font-weight: 400;
     line-height: 30px; /* 150% */
 }
+
+
+.city-card {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .city-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .city-name {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }

@@ -76,4 +76,24 @@
     line-height: normal;
 }
 
+.slogan{
+  color: var(--White-50, #FFF);
+text-align: center;
+font-family: "Poltawski Nowy";
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
   
+.slogan-p{
+  color: var(--Shark-200, #D1D1D1);
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 6.4px;
+}
+
