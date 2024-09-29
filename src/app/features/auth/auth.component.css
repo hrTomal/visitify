@@ -7,3 +7,15 @@
     background-size: cover;
     background-position: center;
   } */
+
+.row{
+  padding-left: 0px !important; 
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.rmv-padding{
+  padding-left: 0px !important; 
+  padding-right: 0px !important;
+}
+  
