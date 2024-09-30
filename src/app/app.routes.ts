@@ -6,9 +6,11 @@ import { ServiceProviderDashboardComponent } from './features/dashboard/service-
 import { AuthComponent } from './features/auth/auth.component';
 import { RegisterComponent } from './features/register/register.component';
 import { LandingComponent } from './features/landing/landing/landing.component';
+import { CsSignUpComponent } from './features/cs-sign-up/cs-sign-up.component';
 
 export const routes: Routes = [
-    { path: '', component: LandingComponent },
+    { path: '', component: CsSignUpComponent },
+    { path: 'landing', component: LandingComponent },
     { path: 'sp_landing', component: ServiceProviderLandingComponent },
     { path: 'cs_dashboard', component: CustomerDashboardComponent },
     { path: 'sp_dashboard', component: ServiceProviderDashboardComponent },

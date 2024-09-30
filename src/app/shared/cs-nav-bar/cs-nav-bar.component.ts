@@ -14,6 +14,7 @@ import { LanguageService } from '../../services/language/language.service';
 export class CsNavBarComponent {
   translate: TranslateService = inject(TranslateService);
   selectedLanguage? : string;
+  shouldShowCategories = false;
 
   constructor(private languageService : LanguageService){}
 
