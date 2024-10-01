@@ -2,15 +2,14 @@ import { Component, inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-cs-landing-statistics',
+  selector: 'app-sp-landing-statistics-section',
   standalone: true,
   imports: [
-    
     TranslateModule
   ],
-  templateUrl: './cs-landing-statistics.component.html',
-  styleUrl: './cs-landing-statistics.component.css'
+  templateUrl: './sp-landing-statistics-section.component.html',
+  styleUrl: './sp-landing-statistics-section.component.css'
 })
-export class CsLandingStatisticsComponent {
+export class SpLandingStatisticsSectionComponent {
   translate: TranslateService = inject(TranslateService);
 }

@@ -12,7 +12,7 @@ import { VerifyPhoneComponent } from './features/cs-sign-up/verify-phone/verify-
 
 export const routes: Routes = [
     { path: '', component: CsSignUpComponent },
-    { path: 'landing', component: LandingComponent },
+    { path: 'landing', component: CustomerLandingComponent },
     { path: 'sp_landing', component: ServiceProviderLandingComponent },
     { path: 'cs_dashboard', component: CustomerDashboardComponent },
     { path: 'sp_dashboard', component: ServiceProviderDashboardComponent },
