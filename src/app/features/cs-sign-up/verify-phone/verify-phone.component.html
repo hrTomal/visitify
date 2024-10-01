@@ -1,0 +1,144 @@
+<app-cs-nav-bar></app-cs-nav-bar>
+
+
+<div class="row container-fluid bg-light">
+    <div class="col-md-6 d-flex justify-content-start bg-light rmv-padding" >
+        <img src="assets/images/login_page_bg.png" class="img-fluid" alt="Service Booking Image" style="height: 100vh; object-fit: cover; width: 100%;">
+    </div>
+    <!-- Right side - Sign up Form Section -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center p-5 mb-5">
+        <div class="w-50">
+            <div class="d-flex justify-content-center mb-3">
+                <h4>Verify your Phone Number</h4>
+            </div>
+            <div class="mb-0">
+                <h5>Choose MFA Options</h5>
+            </div>
+            <div >
+                <p>To make changes to your account, verify your phone number using one of the options below</p>
+            </div>
+
+             <!-- SMS Authentication Card -->
+             <div class="card mb-2"  >
+                <ul class="list-group list-group-flush" >
+                    <li class="list-group-item bg-light" (click)="selectOption('sms')">    
+                        <div class="row p-2"  >
+                            <div class="col-md-2">
+                                <span class="border border-secondary fs-3 p-2 rounded-3">
+                                    <i class="bi bi-chat-left-dots"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    SMS Authentication
+                                </div>
+                                <div>Receive a OTP code by SMS</div>
+                            </div>
+                        </div>    
+                    </li>
+                    @if (selectedOptionId === 'sms') {
+                         <div class="container p-2 bg-light">
+                            <div class="row d-flex justify-content-center mx-2 mb-2">
+                                Confirm your phone number
+                            </div>
+                            <div class="row d-flex justify-content-center mx-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light" placeholder="+8801936929399" aria-label="phone number" aria-describedby="button-addon2">
+                                    <button class="btn btn-dark" type="button" id="button-addon2">Get Code</button>
+                                </div>
+                            </div>
+                         </div>                        
+                    }
+                </ul>
+            </div>
+
+            <!-- Phone Call Authentication Card -->
+            <div class="card mb-2" (click)="selectOption('call')" >
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light">             
+                        <div class="row p-2"  >
+                            <div class="col-md-2">
+                                <span class="border border-secondary fs-3 p-2 rounded-3">
+                                    <i class="bi bi-telephone"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    Phone Call Authentication
+                                </div>
+                                <div>Receive a OTP code by Call</div>
+                            </div>
+                        </div>    
+                    </li>
+                    @if(selectedOptionId === 'call'){
+                        <div class="container p-2 bg-light">
+                            <div class="row d-flex justify-content-center mx-2 mb-2">
+                                Confirm your phone number
+                            </div>
+                            <div class="row d-flex justify-content-center mx-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light" placeholder="+8801936929399" aria-label="phone number" aria-describedby="button-addon2">
+                                    <button class="btn btn-dark" type="button" id="button-addon2">Call</button>
+                                </div>
+                            </div>
+                         </div>    
+                    }
+                </ul>
+            </div>
+
+            <!-- WhatsApp Authenticator Card -->
+            <div class="card mb-2" (click)="selectOption('whatsapp')" >
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light">    
+                        <div class="row p-2"  >
+                            <div class="col-md-2">
+                                <span class="border border-secondary fs-3 p-2 rounded-3">
+                                    <i class="bi bi-whatsapp"></i>
+                                </span>
+                            </div>
+                            <div class="col">
+                                <div class="fw-bold">
+                                    WhatsApp Authentication
+                                </div>
+                                <div>Receive a OTP  by WhatsApp Message</div>
+                            </div>
+                        </div>
+                    </li>
+                    @if (selectedOptionId === 'whatsapp') {
+                        <div class="container p-2 bg-light">
+                            <div class="row d-flex justify-content-center mx-2 mb-2">
+                                Confirm your phone number
+                            </div>
+                            <div class="row d-flex justify-content-center mx-2">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light" placeholder="+8801936929399" aria-label="phone number" aria-describedby="button-addon2">
+                                    <button class="btn btn-dark" type="button" id="button-addon2">Get Code</button>
+                                </div>
+                            </div>
+                         </div>    
+                    }                    
+                </ul>
+            </div>
+            <!-- <div class="card mb-2" id="card-1">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-light">An item</li>
+                  <li class="list-group-item bg-light">A second item</li>
+                </ul>
+            </div>
+            <div class="card  mb-2" id="card-1">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-light">An item</li>
+                  <li class="list-group-item bg-light">A second item</li>
+                </ul>
+            </div>
+            <div class="card  mb-2 " id="card-1">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-light">An item</li>
+                  <li class="list-group-item bg-light">A second item</li>
+                </ul>
+            </div> -->
+
+            
+        </div>
+    </div>    
+</div>
