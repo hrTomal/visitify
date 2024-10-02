@@ -2,3 +2,32 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+/* Custom style for the active state (highlighted) */
+.p-selectbutton .p-button.p-highlight {
+    background-color: black !important; /* Set the background color for the active button */
+    border-color: black; /* Set the border color */
+    color: white; /* Set the text color */
+}
+
+/* Optional: Change the active button on hover */
+.p-selectbutton .p-button.p-highlight:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    border-color: #0056b3; /* Darker border on hover */
+}
+
+/* Change the inactive (non-selected) buttons */
+.p-selectbutton .p-button {
+    background-color: #f0f0f0; /* Set the background color of inactive buttons */
+    color: #000; /* Set the text color for inactive buttons */
+    border-color: #dcdcdc; /* Set the border color for inactive buttons */
+}
+
+/* Optional: Change the border and background on hover for inactive buttons */
+.p-selectbutton .p-button:hover {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}

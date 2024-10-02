@@ -1,0 +1,11 @@
+.carousel-prev-icon{
+    align-self: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-color: yellowgreen !important;
+}

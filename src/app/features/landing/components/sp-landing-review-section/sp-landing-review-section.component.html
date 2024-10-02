@@ -1,0 +1,43 @@
+
+
+
+<!-- <div class="container-fluid col-md-9 container-bg rounded-4 mt-4">
+    <div class="row">
+        @for (item of reviews; track $index) {
+            <div class="card border-0 shadow rounded-4 col-md-2 me-2">
+                <img [src]="item.image" class="card-img-top rounded-4" alt="{{ item.name }}">
+                <div class="card-img-overlay d-flex flex-column justify-content-end text-light p-2"
+                     style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));">
+                  <h5 class="fw-bold mb-0">{{  item.name }}</h5>
+                  <p class="mb-1">{{  item.designation }}</p>
+                  <p class="mb-0">{{  item.companyName }}</p>
+                  <a [href]=" item.url" class="stretched-link"></a>
+                </div>
+            </div>
+        }
+    </div>
+    
+</div> -->
+<div class="container-fluid col-md-9 container-bg rounded-4 mt-4">
+  <p-carousel 
+    [value]="reviews" 
+    [circular]="true" 
+    [responsiveOptions]="responsiveOptions" 
+    [showIndicators]="false" 
+    [numVisible]="4"
+    [numScroll]="4"
+    >    
+    <ng-template let-product pTemplate="item">
+      <div class="card border-0 shadow rounded-4 me-2">
+        <img [src]="product.image" class="card-img-top rounded-4" alt="{{ product.name }}">
+        <div class="card-img-overlay d-flex flex-column justify-content-end text-light p-2"
+             style="background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));">
+          <h5 class="fw-bold mb-0">{{ product.name }}</h5>
+          <p class="mb-1">{{ product.designation }}</p>
+          <p class="mb-0">{{ product.companyName }}</p>
+          <a [href]="product.url" class="stretched-link"></a>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

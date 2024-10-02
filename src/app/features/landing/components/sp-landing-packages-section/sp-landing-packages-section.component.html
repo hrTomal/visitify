@@ -8,9 +8,13 @@
         <div>
             <p>From basic to Pro, find the right plan to streamline your business</p>
         </div>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary" data-bs-toggle="button" aria-pressed="false">Monthly</button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="button" aria-pressed="false">Yearly</button>
-          </div>
+        <div class="">
+            <p-selectButton 
+            [options]="stateOptions" 
+            [(ngModel)]="value" 
+            optionLabel="label" 
+            optionValue="value"
+            />
+        </div>
     </div>
 </div>

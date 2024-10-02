@@ -1,0 +1,12 @@
+.faq-answer-box{
+    background: var(--White-100, #EFEFEF);
+    padding: 0%;
+}
+
+/* .mat-expansion-panel-header {
+    padding: 0 0;
+} */
+
+.mat-expansion-panel-body {
+    padding: 0 0 0;
+}
