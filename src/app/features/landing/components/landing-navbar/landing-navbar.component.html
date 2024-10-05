@@ -1,16 +1,17 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-transparent fixed-top" 
+     [ngClass]="{'color-change': isScrolled}">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/logo/white_full.png" alt="VISITYFY Logo" class="logo">
+            <img src="assets/images/logo/white_full.png" alt="VISITYFY Logo" class="logo" height="80px" width="">
         </a>
       
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <!-- Centering the nav items -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link active text-white" aria-current="page" href="#"> {{ 'Doctor' | translate }} </a>
                 </li>
                 <li class="nav-item">
@@ -21,7 +22,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active text-white" aria-current="page" href="#"> {{ 'Barber' | translate }}</a>
-                </li>
+                </li> -->
             </ul>
             <button class="btn btn-outline-light me-2">{{ 'Contact Us' | translate }} </button>     
             <!-- Language Dropdown -->
@@ -32,15 +33,15 @@
                 id="languageDropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                <span class="material-icons me-2">language</span>
-                {{ selectedLanguage }}
+                    <span class="material-icons me-2">language</span>
+                    {{ selectedLanguage }}
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item" href="#" (click)="switchLanguage('en')">English</a></li>
-                <li><a class="dropdown-item" href="#" (click)="switchLanguage('ger')">German</a></li>
-                <li><a class="dropdown-item" href="#" (click)="switchLanguage('fr')">French</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="switchLanguage('en')">English</a></li>
+                    <li><a class="dropdown-item" href="#" (click)="switchLanguage('ger')">German</a></li>
+                    <!-- <li><a class="dropdown-item" href="#" (click)="switchLanguage('fr')">French</a></li> -->
                 </ul>
             </div>   
-      </div>
+        </div>
     </div>
 </nav>

@@ -4,20 +4,17 @@ import { ServiceProviderLandingComponent } from './features/landing/service-prov
 import { CustomerDashboardComponent } from './features/dashboard/customer-dashboard/customer-dashboard.component';
 import { ServiceProviderDashboardComponent } from './features/dashboard/service-provider-dashboard/service-provider-dashboard.component';
 import { AuthComponent } from './features/auth/auth.component';
-import { RegisterComponent } from './features/register/register.component';
-import { LandingComponent } from './features/landing/landing/landing.component';
 import { CsSignUpComponent } from './features/cs-sign-up/cs-sign-up.component';
 import { VerifyEmailComponent } from './features/cs-sign-up/verify-email/verify-email.component';
 import { VerifyPhoneComponent } from './features/cs-sign-up/verify-phone/verify-phone.component';
 
 export const routes: Routes = [
-    { path: '', component: CsSignUpComponent },
-    { path: 'landing', component: CustomerLandingComponent },
-    { path: 'sp_landing', component: ServiceProviderLandingComponent },
-    { path: 'cs_dashboard', component: CustomerDashboardComponent },
-    { path: 'sp_dashboard', component: ServiceProviderDashboardComponent },
     { path: 'login', component: AuthComponent },
-    { path: 'register', component: RegisterComponent },
+    { path: 'sign-up', component: CsSignUpComponent },
+    { path: '', component: CustomerLandingComponent },
+    { path: 'sp-landing', component: ServiceProviderLandingComponent },
+    { path: 'cs-dashboard', component: CustomerDashboardComponent },
+    { path: 'sp-dashboard', component: ServiceProviderDashboardComponent },
     { path: 'verify-email', component: VerifyEmailComponent },
     { path: 'verify-phone', component: VerifyPhoneComponent }
 ];
