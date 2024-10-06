@@ -1,5 +1,5 @@
 
-<div class="container-fluid col-md-9 justify-content-center p-3 mt-5">
+<div class="container-fluid col-md-10 justify-content-center p-3 mt-5">
   <h1 class=""> {{ 'Find Services' | translate }} </h1>
   <p class="mb-3">{{ 'Discover our professional services in major cities across Germany, including Berlin, Hamburg, Munich, Cologne, and beyond. Wherever you are, we bring expert haircuts, makeup artistry, legal consultations to your doorstep.' | translate }}</p>
   <div class="row bg-light rounded-4 pt-2">
@@ -24,8 +24,16 @@
     </div>
 
     <!-- Right side with a map -->
-    <div class="col-lg-8 ">
-      <img src="/assets/images/map_image.png" alt="Map" class="img-fluid w-100 rounded-4" style="height: 816px;">
+    <div class="col-lg-8 rounded-4 ">
+      <!-- <img src="/assets/images/map_image.png" alt="Map" class="img-fluid w-100 rounded-4" style="height: 816px;"> -->
+      <google-map 
+        [center]="center"
+        [zoom]="zoom"
+        height="100%"
+        width="100%"
+      >
+      <map-marker [position]="center" [options]="markerOptions"></map-marker>
+    </google-map>
     </div>
   </div>
 </div>

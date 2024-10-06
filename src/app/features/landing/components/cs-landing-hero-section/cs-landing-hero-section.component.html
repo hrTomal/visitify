@@ -7,17 +7,22 @@
             <h1 class="slogan">{{ 'Find the Perfect Service Provider' | translate }}</h1>
             <p class="slogan-p"> {{ 'whenever and wherever you want!' | translate }} </p>
         </div>
-        <div class="search-bar d-flex flex-column flex-md-row justify-content-between align-items-stretch p-3 rounded-4 mt-5">
+        <div class="search-bar d-flex flex-column flex-md-row justify-content-between align-items-stretch p-3 rounded-4 mt-5 border border-dark border-4">
             <div class="flex-grow-1 mb-4 mb-md-0">
                 <label class="input-label ms-2">{{ 'What are you looking for?' | translate }}</label>
-                <input type="text" class="form-control borderless-input" id="service-input" [placeholder]="'Service you are looking for (cut, etc)' | translate">
+                <input type="text" class="form-control borderless-input" id="service-input" [placeholder]="'Doctor, Haircutter, tutoring' | translate">
             </div>
             <div class="divider border-start mx-3 d-none d-md-block"></div> <!-- Vertical Divider only on medium and larger screens -->
-            <div class="flex-grow-1 mb-4 mb-md-0">
+            <div class="flex-grow-0 mb-4 mb-md-0">
                 <label class="input-label ms-2"> {{ 'Where?' | translate }}</label>
-                <input type="text" class="form-control borderless-input" id="floatingInput" [placeholder]="'City, Postal Code...' | translate">
+                <input type="text" class="form-control borderless-input" id="floatingInput" [placeholder]="'Address, city' | translate">
             </div>
-            <button mat-raised-button class="btn btn-dark ms-md-3 px-4 rounded-4"> {{ 'Search Now' | translate }} </button>
+            <div class="divider border-start mx-3 d-none d-md-block"></div> <!-- Vertical Divider only on medium and larger screens -->
+            <div class="flex-grow-0 mb-4 mb-md-0">
+                <label class="input-label ms-2"> {{ 'When?' | translate }}</label>
+                <input type="text" class="form-control borderless-input" id="floatingInput" [placeholder]="'Date' | translate">
+            </div>
+            <button mat-raised-button class="btn btn-dark ms-md-3 px-4 rounded-4"> <span><i class="bi bi-search text-light me-1"></i></span> {{ 'Search' | translate }} </button>
         </div>
     </div>
 </section>

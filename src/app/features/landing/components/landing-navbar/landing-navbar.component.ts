@@ -39,16 +39,21 @@ export class LandingNavbarComponent {
   }
 
   @HostListener('window:scroll', [])
-  onWindowScroll() {
-    // Get the hero section element
-    const heroSection = document.querySelector('app-cs-landing-hero-section');
+onWindowScroll() {
+  // Get the search bar element
+  const searchBar = document.querySelector('.search-bar');
+  
+  if (searchBar) {
+    // Get the position of the search bar relative to the viewport
+    const searchBarBottom = searchBar.getBoundingClientRect().bottom;
 
-    console.log('Scrolled:', this.isScrolled);
+    // Set isScrolled to true when the search bar goes out of view
+    this.isScrolled = searchBarBottom <= 0; 
+
+    // Show or hide the search bar based on scroll position
+    this.showSearchBar = this.isScrolled;
     
-    if (heroSection) {
-      const heroSectionBottom = heroSection.getBoundingClientRect().bottom;
-      this.isScrolled = heroSectionBottom <= 0; // Change state when hero section is out of view
-      this.showSearchBar = this.isScrolled;
-    }
+    console.log('Scrolled:', this.isScrolled);
   }
+}
 }

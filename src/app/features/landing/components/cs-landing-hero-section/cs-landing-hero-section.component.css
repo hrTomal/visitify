@@ -1,13 +1,14 @@
 .hero-section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-image: url('/assets/images/hero_bg-modified.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('/assets/images/hero-bg.jpg');
+  background-size: contain;
+  background-position: center;
+}
+
   
   .hero-overlay {
     position: absolute;
@@ -97,3 +98,13 @@ line-height: normal;
 letter-spacing: 6.4px;
 }
 
+
+/* Styles for input placeholders */
+input::placeholder {
+  color: var(--Shark-950, #1F1F1F);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
