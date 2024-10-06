@@ -10,10 +10,10 @@ import { VerifyPhoneComponent } from './features/cs-sign-up/verify-phone/verify-
 import { FooterComponent } from './shared/footer/footer.component';
 
 export const routes: Routes = [
-    { path: '', component: FooterComponent },
+    { path: 'footer', component: FooterComponent },
     { path: 'login', component: AuthComponent },
     { path: 'sign-up', component: CsSignUpComponent },
-    { path: 'cs-landing', component: CustomerLandingComponent },
+    { path: '', component: CustomerLandingComponent },
     { path: 'sp-landing', component: ServiceProviderLandingComponent },
     { path: 'cs-dashboard', component: CustomerDashboardComponent },
     { path: 'sp-dashboard', component: ServiceProviderDashboardComponent },

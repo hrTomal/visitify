@@ -4,15 +4,16 @@
     backdrop-filter: blur(20px);
 }
 
-.color-change{
-    background: var(--Shark-950, #1F1F1F);
-    backdrop-filter: blur(20px);    
+.navbar-brand{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.navbar-brand .logo {
-    height: 50px; /* Adjust as necessary */
-    width: auto; /* Maintains aspect ratio */
+.color-change{
+    background: var(--Shark-950, #1F1F1F) !important;
+    /* backdrop-filter: blur(20px);     */
 }
+
 
 .btn-outline-light {
     border-color: rgba(255, 255, 255, 0.5);
@@ -23,9 +24,6 @@
 background-color: rgba(255, 255, 255, 0.1);
 }
 
-.dropdown-toggle::after {
-margin-left: 0.5rem;
-}
 
 .material-icons {
 font-size: 1.2rem; /* Adjust icon size */
@@ -34,5 +32,16 @@ vertical-align: middle;
 
   
 .dropdown-toggle::after {
-    margin-left: 0.5rem;
-  }
+    display: none !important;
+}
+
+.offer-service-btn-text{
+    font-weight: 400;
+    color: var(--Shark-950, #1F1F1F);
+    font-family: Inter;
+}
+
+.search-btn{
+    border-radius: 8px;
+    border: 3px solid var(--Shark-100, #E7E7E7);    
+}

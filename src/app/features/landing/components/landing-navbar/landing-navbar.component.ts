@@ -23,6 +23,7 @@ export class LandingNavbarComponent {
   translate: TranslateService = inject(TranslateService);
   selectedLanguage? : string;
   isScrolled = false;
+  showSearchBar = false;
 
   constructor(private languageService : LanguageService){}
 
@@ -47,6 +48,7 @@ export class LandingNavbarComponent {
     if (heroSection) {
       const heroSectionBottom = heroSection.getBoundingClientRect().bottom;
       this.isScrolled = heroSectionBottom <= 0; // Change state when hero section is out of view
+      this.showSearchBar = this.isScrolled;
     }
   }
 }
