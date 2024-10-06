@@ -1,76 +1,92 @@
-<footer class="footer-container text-light py-5">
-    <div class="container">
+<footer class="footer-bg text-light py-5">
+    <div class="container-fluid col-md-10">
       <div class="row">
-        
-        <!-- Logo and Social Icons -->
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <!-- <h3 class="mb-3">VISITYFY</h3> -->
+        <div class="col-md-6">
           <img src="assets/images/logo/white_full.png" alt="VISITYFY Logo" class="logo">
-          <div class="d-flex ps-3">
-            <a href="#" class="me-3 text-light">
-              <i class="bi bi-linkedin display-6 fw-bold"></i>
-            </a>
-            <a href="#" class="me-3 text-light">
-              <i class="bi bi-instagram display-6 fw-bold"></i>
-            </a>
-            <a href="#" class="me-3 text-light">
-              <i class="bi bi-facebook display-6 fw-bold"></i>
-            </a>
+          <p>{{'We accept' | translate}}</p>
+          <div class="col-md-5 d-flex justify-content-right mb-3">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/big.png" alt="electronic cash" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/logos_mastercard.svg" alt="mastercard" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/visa.svg" alt="visa" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/logos_maestro.svg" alt="maestro" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Frame 276.svg" alt="vpay" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/layer1.svg" alt="amex" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Vector (1).svg" alt="nfc" height="24px">
+          </div>
+          <div>
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Frame 277.svg" alt="gpay" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/XMLID_34_.svg" alt="applepay" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Paypal.png" alt="paypal" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Group.svg" alt="klarna" height="24px">
+            <img class="mx-2" src="assets/images/icons/payment-gateways/Sofort.png" alt="sofort" height="24px">
           </div>
         </div>
-  
-        <!-- About Visityfy -->
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 class="mb-3">{{'About Visityfy'  | translate }}</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Visityfy Pro</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Karriere</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Über Uns</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">FAQ</a></li>
-              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Technischer Support</a></li>
-            </ul>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-7">
+              <h5 class="mb-3">{{'Partner'  | translate }}</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Become Partner' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Partner Information' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Product & Services' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Pricing' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Contact Us' | translate}}</a></li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <h5 class="mb-3">{{'About Visityfy'  | translate }}</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'About us' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Imprint' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Cookies' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Term & Condition ' | translate}}</a></li>
+                <li class="mb-2"><a href="#" class="shark-300-text">{{'Data privacy' | translate}}</a></li>
+              </ul>
+            </div>
+            <h6 class="mb-3 mt-4">{{'Suscribe to new updates'  | translate }}</h6>
+              <form class="">
+                <div class="row">
+                  <div class="col-md-7">
+                    <input type="email" class="form-control mb-2 shark-300-text footer-bg p-2 input-border-color" [placeholder]="'Enter Your Email' | translate ">
+                  </div>
+                  <div class="col-md-5">
+                    <button class="btn btn-light col-md-5 p-2" type="submit"> {{ 'Subscribe' | translate}} </button>
+                  </div>    
+                </div>  
+              </form>
           </div>
-          
-  
-        <!-- Dienstleistung Finden -->
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h5 class="mb-3">Dienstleistung Finden</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-light">Visityfy Deutschland</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Visityfy Niederlande</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Visityfy Belgien</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Visityfy Frankreich</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Visityfy Schweiß</a></li>
-          </ul>
-        </div>
-  
-        <!-- Visityfy Legal -->
-        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h5 class="mb-3">Visityfy Legal</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-light">Cookies</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Datenschutz</a></li>
-            <li class="mb-2"><a href="#" class="text-light">AGB</a></li>
-            <li class="mb-2"><a href="#" class="text-light">Impressum</a></li>
-          </ul>
-        </div>
-  
-        <!-- Subscribe -->
-        <div class="col-lg-3 col-md-6">
-          <h5 class="mb-3">Subscribe to new updates</h5>
-          <form class="d-flex flex-column">
-            <input type="email" class="form-control mb-2 bg-dark text-light" placeholder="Enter Your Email">
-            <button class="btn btn-light" type="submit">Subscribe</button>
-          </form>
-        </div>
-  
+        </div>  
       </div>
   
       <!-- Copyright -->
-      <div class="text-center mt-4">
-        <hr class="border-light">
-        <p class="mb-0">Copyright © 2024 Visityfy</p>
+      <div class="row pb-4">
+        <hr class="border-light my-3">
+        <div class="col-md-6">
+          <p class="mb-0 copyright-text shark-300-text">© 2024 Visityfy.eu  All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-7 d-flex justify-content-center">
+              <a href="#" class="me-3 text-light">
+                <i class="bi bi-linkedin display-6 "></i>
+              </a>
+              <a href="#" class="me-3 text-light">
+                <i class="bi bi-instagram display-6 "></i>
+              </a>
+              <a href="#" class="me-3 text-light">
+                <i class="bi bi-facebook display-6"></i>
+              </a>
+            </div>
+            <div class="col-md-5 d-flex justify-content-around">
+              <img class="mx-2" src="assets/svg/landing-icons/iso.svg" alt="iso" width="50" height="50">
+              <img class="mx-2"src="assets/svg/landing-icons/card-protected.svg" alt="protected" width="50" height="50">
+              <img class="mx-2" src="assets/images/icons/gdpr.png" alt="gdpr" width="50" height="50">
+            </div>
+          </div>
+          
+        </div>
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
   
