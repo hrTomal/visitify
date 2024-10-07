@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class GeoLocationService {
 
-  private apiUrl = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDOKp9f0j7Z66Dk7fK4FG6wWU0DiKHrt6o';
+  private apiUrl = 'https://www.googleapis.com/geolocation/v1/geolocate?key=';
   private geocodingApiUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
 
   constructor(private http: HttpClient) {}
