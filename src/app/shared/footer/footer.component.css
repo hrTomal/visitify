@@ -7,7 +7,7 @@ a {
   }
 
 .logo {
-    height: 150px; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
     width: auto; /* Maintains aspect ratio */
 }
 
@@ -34,4 +34,13 @@ input::placeholder {
 
 .input-border-color{
   border: var(--Shark-700, #B0B0B0) solid;
+}
+
+.we-accept-text{
+  color: var(--Shark-50, #F5F5F5);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

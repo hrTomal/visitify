@@ -8,6 +8,7 @@ import { CsSignUpComponent } from './features/cs-sign-up/cs-sign-up.component';
 import { VerifyEmailComponent } from './features/cs-sign-up/verify-email/verify-email.component';
 import { VerifyPhoneComponent } from './features/cs-sign-up/verify-phone/verify-phone.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ErrorPageComponent } from './features/error-page/error-page.component';
 
 export const routes: Routes = [
     { path: 'footer', component: FooterComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
     { path: 'cs-dashboard', component: CustomerDashboardComponent },
     { path: 'sp-dashboard', component: ServiceProviderDashboardComponent },
     { path: 'verify-email', component: VerifyEmailComponent },
-    { path: 'verify-phone', component: VerifyPhoneComponent }
+    { path: 'verify-phone', component: VerifyPhoneComponent },
+    { path: '**', component: ErrorPageComponent }
 ];
